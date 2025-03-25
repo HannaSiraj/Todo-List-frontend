@@ -1,0 +1,32 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: var(--task-bg);
+  border-radius: 5px;
+  margin-bottom: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.todo-item.completed {
+  background: #d4edda;
+}
+
+.todo-item.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-text {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+button {
+  margin-left: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}

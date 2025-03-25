@@ -1,0 +1,66 @@
+.todo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-color); 
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .input-container input {
+    width: 250px;  /* Increased width */
+    padding: 10px; /* More padding for better spacing */
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  /* Add button */
+  .add-button {
+    padding: 8px 12px;
+    font-size: 1em;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #3700b3;
+  }
+  
+  /* 🌙 Dark Mode Button */
+  .theme-toggle {
+    padding: 8px;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* 🌙 Dark Mode Styles */
+  :root {
+    --background-color: white;
+    --text-color: black;
+    --task-bg: #dff0d8;
+  }
+  
+  [data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: white;
+    --task-bg: #333;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
